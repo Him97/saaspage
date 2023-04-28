@@ -16,32 +16,35 @@
             <div class="side-title"><h1>Saas Kit</h1></div>
             <div class="side-nav">
                 <div class="side-profile">
-                    <img src="./images/profile.png" alt="Sierra Ferguson">
+                    <img src="./images/profile.svg" alt="Sierra Ferguson">
                     <div>
                         <h2>Sierra Ferguson</h2>
                         <p>s.ferguson@gmail.com</p>
                     </div>
                 </div>
                 <ul class="side-options">
-                    <li><a href="./index.html"><img src="./images/dashboard.png" title="Dashboard"><p>Dashboard</p></a></li>
-                    <li><a href="./pages/tasks.html"><img src="./images/tasks.png" title="Tasks"><p>Tasks</p></a></li>
-                    <li><a href="./pages/email.html"><img src="./images/email.png" title="Email"><p>Email</p></a></li>
-                    <li><a href="./pages/contacts.html"><img src="./images/contacts.png" title="Contacts"><p>Contacts</p></a></li>
-                    <li><a href="./pages/chats.html"><img src="./images/chat.png" title="Chats"><p>Chats</p></a></li>
-                    <li><a href="./pages/deals.html"><img src="./images/deals.png" title="Deals"><p>Deals</p></a></li>
+                    <li><a href="./index.html"><img src="./images/dashboard.svg" title="Dashboard"><p>Dashboard</p></a></li>
+                    <li><a href="./pages/tasks.html"><img src="./images/tasks.svg" title="Tasks"><p>Tasks</p></a></li>
+                    <li><a href="./pages/email.html"><img src="./images/email.svg" title="Email"><p>Email</p></a></li>
+                    <li><a href="./pages/contacts.html"><img src="./images/contacts.svg" title="Contacts"><p>Contacts</p></a></li>
+                    <li><a href="./pages/chats.html"><img src="./images/chats.svg" title="Chats"><p>Chats</p></a></li>
+                    <li><a href="./pages/deals.html"><img src="./images/deals.svg" title="Deals"><p>Deals</p></a></li>
                 </ul>
                 <div class="divider"></div>
                 <div class="side-footer">
-                    <a href="./pages/settings.html"><img src="./images/settings.png" title="Settings"><p>Settings</p></a>
-                    <button type="button"><img src="./images/toggle.png" title="Toggle Sidebar"><p>Toggle sidebar</p></button>
+                    <a href="./pages/settings.html"><img src="./images/settings.svg" title="Settings"><p>Settings</p></a>
+                    <button type="button"><img src="./images/toggle.svg" title="Toggle Sidebar"><p>Toggle sidebar</p></button>
                 </div>
             </div>
         </div>
         <div class="content-wrapper">
             <div class="searchbar">
-                <button type="submit" title="Global search"><img src="./images/search.png" title="Global search"></button>
+                <button type="submit" title="Global search"><img src="./images/search.svg" title="Global search"></button>
                 <input type="text" placeholder="Global search">
-                <button type="button" title="Notifications"><img src="./images/vector.png" title="Notifications"><img src="./images/ellipse.png" title="New Notifications"></button>
+                <button type="button" title="Notifications" class="button-notifications">
+                    <img src="./images/vector.svg" title="Notifications" class="vector">
+                    <img src="./images/ellipse.svg" title="New Notifications" class="ellipse">
+                </button>
             </div>
             <div class="content">
                 <div class="box tasks">
@@ -77,12 +80,12 @@
                         <div><p>Due date: </p></div>
                         <div class="cards-contents">
                             <div class="cards-profiles">
-                                <img src="./images/george.png" alt="George Fields">
+                                <img src="./images/george.svg" alt="George Fields">
                                 <h3>George Fields</h3>
                             </div>
                             <div class="cards-editor">
-                                <button type="button" title="Edit"><img src="./images/edit.png" title="Edit"></button>
-                                <button type="button" title="Delete"><img src="./images/delete.png" title="Delete"></button>
+                                <button type="button" title="Edit"><img src="./images/edit.svg" title="Edit"></button>
+                                <button type="button" title="Delete"><img src="./images/delete.svg" title="Delete"></button>
                                 <div class="cards-status"><p>Completed</p></div>
                             </div>
                         </div>
@@ -95,12 +98,12 @@
                         <div><p>Due date: </p></div>
                         <div class="cards-contents">
                             <div class="cards-profiles">
-                                <img src="./images/rebecca.png" alt="Rebecca Moore">
+                                <img src="./images/rebecca.svg" alt="Rebecca Moore">
                                 <h3>Rebecca Moore</h3>
                             </div>
                             <div class="cards-editor">
-                                <button type="button" title="Edit" class="button-ended"><img src="./images/edit.png" title="Edit"></button>
-                                <button type="button" title="Delete" class="button-ended"><img src="./images/delete.png" title="Delete"></button>
+                                <button type="button" title="Edit" class="button-ended"><img src="./images/edit.svg" title="Edit"></button>
+                                <button type="button" title="Delete" class="button-ended"><img src="./images/delete.svg" title="Delete"></button>
                                 <div class="cards-status cards-ended"><p>Ended</p></div>
                             </div>
                         </div>
@@ -113,12 +116,12 @@
                         <div><p>Due date: </p></div>
                         <div class="cards-contents">
                             <div class="cards-profiles">
-                                <img src="./images/lindsey.png" alt="Lindsey Stroud">
+                                <img src="./images/lindsey.svg" alt="Lindsey Stroud">
                                 <h3>Lindsey Stroud</h3>
                             </div>
                             <div class="cards-editor">
-                                <button type="button" title="Edit"><img src="./images/edit.png" title="Edit"></button>
-                                <button type="button" title="Delete"><img src="./images/delete.png" title="Delete"></button>
+                                <button type="button" title="Edit"><img src="./images/edit.svg" title="Edit"></button>
+                                <button type="button" title="Delete"><img src="./images/delete.svg" title="Delete"></button>
                                 <div class="cards-status"><p>Completed</p></div>
                             </div>
                         </div>
@@ -131,17 +134,30 @@
                         <div class="box-select box-title-visable">
                             <p>Show: </p>
                             <select title="Time Range">
-                                <option value ="weekly">This week</option>
-                                <option value ="monthly">This month</option>
-                                <option value="annual">This year</option>
-                                <option value="daily">Today</option>
+                                <option value ="weekly">Monthly</option>
+                                <option value ="monthly">Weekly</option>
+                                <option value="annual">Daily</option>
+                                <option value="daily">Annual</option>
                             </select>
                         </div>
                     </div>
                     <div class="divider"></div>
                     <div class="charts-vertical">
                         <ul><li>Closed deals</li></ul>
-                        <img src="./images/deals-graphic.png" title="Deals">
+                        <div class="graphic-lines">
+                            <div>200</div>
+                            <div class="graphic-lines-chart"><img src="./images/deals-graphic.svg" title="Deals"></div>
+                            <div>150</div>
+                            <div>100</div>
+                            <div>50</div>
+                            <div>0</div>
+                            <div></div>
+                            <div>1 Dec</div>
+                            <div>8 Dec</div>
+                            <div>16 Dec</div>
+                            <div>31 Dec</div>
+                        </div>
+                        
                     </div>
                 </div>
                 <div class="box tasks-chart">
@@ -150,16 +166,16 @@
                         <div class="box-select box-title-visable">
                             <p>Show: </p>
                             <select title="Time Range">
-                                <option value ="weekly">This week</option>
-                                <option value ="monthly">This month</option>
-                                <option value="annual">This year</option>
+                                <option value ="weekly">This month</option>
+                                <option value ="monthly">This year</option>
+                                <option value="annual">This week</option>
                                 <option value="daily">Today</option>
                             </select>
                         </div>
                     </div>
                     <div class="divider"></div>
                     <div class="charts-horizontal">
-                        <img src="./images/tasks-chart.png" title="Tasks">
+                        <img src="./images/tasks-chart.svg" title="Tasks">
                         <ul>
                             <li class="li-active">Active</li>
                             <li class="li-completed">Completed</li>
