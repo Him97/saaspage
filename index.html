@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SaaS Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="main-wrapper">
+        <div class="sidebar">
+            <div class="side-title"><h1>Saas Kit</h1></div>
+            <div class="side-nav">
+                <div class="side-profile">
+                    <img src="./images/profile.png" alt="Sierra Ferguson">
+                    <div>
+                        <h2>Sierra Ferguson</h2>
+                        <p>s.ferguson@gmail.com</p>
+                    </div>
+                </div>
+                <ul class="side-options">
+                    <li><a href="./index.html"><img src="./images/dashboard.png" title="Dashboard"><p>Dashboard</p></a></li>
+                    <li><a href="./pages/tasks.html"><img src="./images/tasks.png" title="Tasks"><p>Tasks</p></a></li>
+                    <li><a href="./pages/email.html"><img src="./images/email.png" title="Email"><p>Email</p></a></li>
+                    <li><a href="./pages/contacts.html"><img src="./images/contacts.png" title="Contacts"><p>Contacts</p></a></li>
+                    <li><a href="./pages/chats.html"><img src="./images/chat.png" title="Chats"><p>Chats</p></a></li>
+                    <li><a href="./pages/deals.html"><img src="./images/deals.png" title="Deals"><p>Deals</p></a></li>
+                </ul>
+                <div class="divider"></div>
+                <div class="side-footer">
+                    <a href="./pages/settings.html"><img src="./images/settings.png" title="Settings"><p>Settings</p></a>
+                    <button type="button"><img src="./images/toggle.png" title="Toggle Sidebar"><p>Toggle sidebar</p></button>
+                </div>
+            </div>
+        </div>
+        <div class="content-wrapper">
+            <div class="searchbar">
+                <button type="submit" title="Global search"><img src="./images/search.png" title="Global search"></button>
+                <input type="text" placeholder="Global search">
+                <button type="button" title="Notifications"><img src="./images/vector.png" title="Notifications"><img src="./images/ellipse.png" title="New Notifications"></button>
+            </div>
+            <div class="content">
+                <div class="box tasks">
+                    <div class="box-title box-title-visable">
+                        <p>8 tasks completed out of 10</p>
+                        <div class="box-select">
+                            <p>Show: </p>
+                            <select title="Time Range">
+                                <option value ="weekly">This week</option>
+                                <option value ="monthly">This month</option>
+                                <option value="annual">This year</option>
+                                <option value="daily">Today</option>
+                            </select>
+                        </div>
+                    </div>
+                    <progress value="8" max="10"></progress>
+                    <div class="today"><h1>23 December, Sunday</h1></div>
+                    <div class="calendar">
+                        <div class="days"><p>Sun</p><p class="day1">23</p></div>
+                        <div class="days"><p>Mon</p><p class="day2">24</p></div>
+                        <div class="days"><p>Tue</p><p class="day3">25</p></div>
+                        <div class="days"><p>Wed</p><p class="day4">26</p></div>
+                        <div class="days"><p>Thu</p><p class="day5">27</p></div>
+                        <div class="days"><p>Fri</p><p class="day6">28</p></div>
+                        <div class="days"><p>Sat</p><p class="day7">29</p></div>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="cards">
+                        <div class="cards-contents">
+                            <h2>Send benefit review by Sunday</h2>
+                            <p>Reminder</p>
+                        </div>
+                        <div><p>Due date: </p></div>
+                        <div class="cards-contents">
+                            <div class="cards-profiles">
+                                <img src="./images/george.png" alt="George Fields">
+                                <h3>George Fields</h3>
+                            </div>
+                            <div class="cards-editor">
+                                <button type="button" title="Edit"><img src="./images/edit.png" title="Edit"></button>
+                                <button type="button" title="Delete"><img src="./images/delete.png" title="Delete"></button>
+                                <div class="cards-status"><p>Completed</p></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cards">
+                        <div class="cards-contents">
+                            <h2>Invite to office meet-up</h2>
+                            <p>Call</p>
+                        </div>
+                        <div><p>Due date: </p></div>
+                        <div class="cards-contents">
+                            <div class="cards-profiles">
+                                <img src="./images/rebecca.png" alt="Rebecca Moore">
+                                <h3>Rebecca Moore</h3>
+                            </div>
+                            <div class="cards-editor">
+                                <button type="button" title="Edit" class="button-ended"><img src="./images/edit.png" title="Edit"></button>
+                                <button type="button" title="Delete" class="button-ended"><img src="./images/delete.png" title="Delete"></button>
+                                <div class="cards-status cards-ended"><p>Ended</p></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cards">
+                        <div class="cards-contents">
+                            <h2>Office meet-up</h2>
+                            <p>Event</p>
+                        </div>
+                        <div><p>Due date: </p></div>
+                        <div class="cards-contents">
+                            <div class="cards-profiles">
+                                <img src="./images/lindsey.png" alt="Lindsey Stroud">
+                                <h3>Lindsey Stroud</h3>
+                            </div>
+                            <div class="cards-editor">
+                                <button type="button" title="Edit"><img src="./images/edit.png" title="Edit"></button>
+                                <button type="button" title="Delete"><img src="./images/delete.png" title="Delete"></button>
+                                <div class="cards-status"><p>Completed</p></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div><p>Show more</p></div>
+                </div>
+                <div class="box deals-graphic">
+                    <div class="box-title">
+                        <h1>Deals</h1>
+                        <div class="box-select box-title-visable">
+                            <p>Show: </p>
+                            <select title="Time Range">
+                                <option value ="weekly">This week</option>
+                                <option value ="monthly">This month</option>
+                                <option value="annual">This year</option>
+                                <option value="daily">Today</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="charts-vertical">
+                        <ul><li>Closed deals</li></ul>
+                        <img src="./images/deals-graphic.png" title="Deals">
+                    </div>
+                </div>
+                <div class="box tasks-chart">
+                    <div class="box-title">
+                        <h1>Tasks</h1>
+                        <div class="box-select box-title-visable">
+                            <p>Show: </p>
+                            <select title="Time Range">
+                                <option value ="weekly">This week</option>
+                                <option value ="monthly">This month</option>
+                                <option value="annual">This year</option>
+                                <option value="daily">Today</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="charts-horizontal">
+                        <img src="./images/tasks-chart.png" title="Tasks">
+                        <ul>
+                            <li class="li-active">Active</li>
+                            <li class="li-completed">Completed</li>
+                            <li class="li-ended">Ended</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
