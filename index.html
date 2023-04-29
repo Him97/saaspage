@@ -7,13 +7,13 @@
     <title>SaaS Page</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
     <link href="./css/style.css" rel="stylesheet">
 </head>
 <body>
     <div class="main-wrapper">
         <div class="sidebar">
-            <div class="side-title"><h1>Saas Kit</h1></div>
+            <div class="side-title">Saas Kit</div>
             <div class="side-nav">
                 <div class="side-profile">
                     <img src="./images/profile.svg" alt="Sierra Ferguson">
@@ -23,17 +23,17 @@
                     </div>
                 </div>
                 <ul class="side-options">
-                    <li><a href="./index.html"><img src="./images/dashboard.svg" title="Dashboard"><p>Dashboard</p></a></li>
-                    <li><a href="./pages/tasks.html"><img src="./images/tasks.svg" title="Tasks"><p>Tasks</p></a></li>
-                    <li><a href="./pages/email.html"><img src="./images/email.svg" title="Email"><p>Email</p></a></li>
-                    <li><a href="./pages/contacts.html"><img src="./images/contacts.svg" title="Contacts"><p>Contacts</p></a></li>
-                    <li><a href="./pages/chats.html"><img src="./images/chats.svg" title="Chats"><p>Chats</p></a></li>
-                    <li><a href="./pages/deals.html"><img src="./images/deals.svg" title="Deals"><p>Deals</p></a></li>
+                    <li><a href="./index.html"><img src="./images/dashboard.svg" title="Dashboard">Dashboard</a></li>
+                    <li><a href="./pages/tasks.html"><img src="./images/tasks.svg" title="Tasks">Tasks</a></li>
+                    <li><a href="./pages/email.html"><img src="./images/email.svg" title="Email">Email</a></li>
+                    <li><a href="./pages/contacts.html"><img src="./images/contacts.svg" title="Contacts">Contacts</a></li>
+                    <li><a href="./pages/chats.html"><img src="./images/chats.svg" title="Chats">Chats</a></li>
+                    <li><a href="./pages/deals.html"><img src="./images/deals.svg" title="Deals">Deals</a></li>
                 </ul>
                 <div class="divider"></div>
                 <div class="side-footer">
-                    <a href="./pages/settings.html"><img src="./images/settings.svg" title="Settings"><p>Settings</p></a>
-                    <button type="button"><img src="./images/toggle.svg" title="Toggle Sidebar"><p>Toggle sidebar</p></button>
+                    <a href="./pages/settings.html"><img src="./images/settings.svg" title="Settings">Settings</a>
+                    <button type="button"><img src="./images/toggle.svg" title="Toggle Sidebar">Toggle sidebar</button>
                 </div>
             </div>
         </div>
@@ -74,14 +74,17 @@
                     <div class="divider"></div>
                     <div class="cards">
                         <div class="cards-contents">
-                            <h2>Send benefit review by Sunday</h2>
+                            <h1>Send benefit review by Sunday</h1>
                             <p>Reminder</p>
                         </div>
-                        <div><p>Due date: </p></div>
+                        <div class="due-date">
+                            <p class="due-date-text">Due date:</p>
+                            <p class="due-date-date">December 23, 2018</p>
+                        </div>
                         <div class="cards-contents">
                             <div class="cards-profiles">
                                 <img src="./images/george.svg" alt="George Fields">
-                                <h3>George Fields</h3>
+                                <p>George Fields</p>
                             </div>
                             <div class="cards-editor">
                                 <button type="button" title="Edit"><img src="./images/edit.svg" title="Edit"></button>
@@ -92,14 +95,17 @@
                     </div>
                     <div class="cards">
                         <div class="cards-contents">
-                            <h2>Invite to office meet-up</h2>
+                            <h1>Invite to office meet-up</h1>
                             <p>Call</p>
                         </div>
-                        <div><p>Due date: </p></div>
+                        <div class="due-date">
+                            <p class="due-date-text">Due date:</p>
+                            <p class="due-date-date">December 23, 2018</p>
+                        </div>
                         <div class="cards-contents">
                             <div class="cards-profiles">
                                 <img src="./images/rebecca.svg" alt="Rebecca Moore">
-                                <h3>Rebecca Moore</h3>
+                                <p>Rebecca Moore</p>
                             </div>
                             <div class="cards-editor">
                                 <button type="button" title="Edit" class="button-ended"><img src="./images/edit.svg" title="Edit"></button>
@@ -110,14 +116,17 @@
                     </div>
                     <div class="cards">
                         <div class="cards-contents">
-                            <h2>Office meet-up</h2>
+                            <h1>Office meet-up</h1>
                             <p>Event</p>
                         </div>
-                        <div><p>Due date: </p></div>
+                        <div class="due-date">
+                            <p class="due-date-text">Due date:</p>
+                            <p class="due-date-date">December 23, 2018</p>
+                        </div>
                         <div class="cards-contents">
                             <div class="cards-profiles">
                                 <img src="./images/lindsey.svg" alt="Lindsey Stroud">
-                                <h3>Lindsey Stroud</h3>
+                                <p>Lindsey Stroud</p>
                             </div>
                             <div class="cards-editor">
                                 <button type="button" title="Edit"><img src="./images/edit.svg" title="Edit"></button>
@@ -126,7 +135,7 @@
                             </div>
                         </div>
                     </div>
-                    <div><p>Show more</p></div>
+                    <button id="showmore" class="showmore">Show more</button>
                 </div>
                 <div class="box deals-graphic">
                     <div class="box-title">
@@ -143,10 +152,10 @@
                     </div>
                     <div class="divider"></div>
                     <div class="charts-vertical">
-                        <ul><li>Closed deals</li></ul>
+                        <ul><li><span>Closed deals</span></li></ul>
                         <div class="graphic-lines">
                             <div>200</div>
-                            <div class="graphic-lines-chart"><img src="./images/deals-graphic.svg" title="Deals"></div>
+                            <div class="graphic-lines-chart"><img src="./images/deals-graphic.png" title="Deals"></div>
                             <div>150</div>
                             <div>100</div>
                             <div>50</div>
@@ -157,7 +166,6 @@
                             <div>16 Dec</div>
                             <div>31 Dec</div>
                         </div>
-                        
                     </div>
                 </div>
                 <div class="box tasks-chart">
@@ -177,9 +185,9 @@
                     <div class="charts-horizontal">
                         <img src="./images/tasks-chart.svg" title="Tasks">
                         <ul>
-                            <li class="li-active">Active</li>
-                            <li class="li-completed">Completed</li>
-                            <li class="li-ended">Ended</li>
+                            <li class="li-active"><span>Active</span></li>
+                            <li class="li-completed"><span>Completed</span></li>
+                            <li class="li-ended"><span>Ended</span></li>
                         </ul>
                     </div>
                 </div>
