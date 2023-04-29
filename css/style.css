@@ -104,10 +104,6 @@ ul {
     width: 30%;
 }
 
-.side-options img:hover {
-    color: #109CF1;
-}
-
 .side-options p {
     font-size: 0.8rem;
     letter-spacing: 0.01em;
@@ -142,6 +138,14 @@ ul {
 .side-footer img {
     padding: 0 5% 0 15%;
     width: 30%;
+}
+
+.side-footer a:hover {
+    color: #109CF1;
+}
+
+.side-footer button:hover{
+    color: #109CF1;
 }
 
 .content-wrapper {
@@ -220,6 +224,8 @@ input {
 
 .tasks {
     grid-row: span 2;
+    position: relative;
+    overflow: hidden;
 }
 
 progress {
@@ -307,7 +313,7 @@ progress::-webkit-progress-value {
 }
 
 .cards-profiles{
-    width: 75%;
+    width: 60%;
     font-size: 0.8rem;
     color: #707683;
     display: flex;
@@ -320,7 +326,7 @@ progress::-webkit-progress-value {
 }
 
 .cards-editor{
-    width: 25%;
+    width: 40%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -336,7 +342,7 @@ progress::-webkit-progress-value {
 }
 
 .cards-status {
-    min-width: 50%;
+    min-width: 60%;
     padding: 2%;
     border-radius: 4px;
     background: #2ED47A;
@@ -346,10 +352,7 @@ progress::-webkit-progress-value {
 }
 
 .cards-status p {
-    font-size: 11px;
-    line-height: 16px;
-    text-align: center;
-    letter-spacing: 0.02em;
+    font-size: 0.7rem;
     color: #FFFFFF;
 }
 
@@ -362,17 +365,26 @@ progress::-webkit-progress-value {
     color: #C2CFE0;
 }
 
+.area-showmore {
+    width: 100%;
+    height: 5%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: ;
+    z-index: 1;
+}
+
 .showmore {
-    background: none;
+    width: 100%;
+    background: rgba(255,255,255,0.6);
     border: none;
     color: #109CF1;
     font-weight: 600;
     font-size: 0.8rem;
-    
-    position: absolute;
-    left: auto;
-    right: auto;
-    bottom: 2%;
 }
 
 .box-title {
