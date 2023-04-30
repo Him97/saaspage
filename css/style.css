@@ -36,6 +36,8 @@ ul {
     flex-direction: column;
     transition: 0.5s;
     background-color: #FFFFFF;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 
 .sidebar:hover {
@@ -63,23 +65,22 @@ ul {
 
 .side-profile {
     font-size: 0.7rem;
-    padding: 15% 0 0 0;
+    margin: 15% 15% 15% 10%;
     height: auto;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
 }
 
 .side-profile img {
+    align-self: center;
     width: 50px;
     height: 50px;
-    margin: 0 10% 0 0;
 }
 
 .side-options {
     height: auto;
-    line-height: 20px;
     letter-spacing: 0.01em;
 }
 
@@ -99,6 +100,10 @@ ul {
     color: #109CF1;
 }
 
+.side-options .link-dashboard{
+    color: #109CF1;
+}
+
 .side-options img {
     padding: 0 5% 0 15%;
     width: 30%;
@@ -106,13 +111,10 @@ ul {
 
 .side-options p {
     font-size: 0.8rem;
-    letter-spacing: 0.01em;
-    line-height: 20px;
 }
 
 .side-footer {
     height: 100%;
-    padding: 10% 0 10% 0;
     box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.06);
     display: flex;
     flex-direction: column;
@@ -120,6 +122,7 @@ ul {
 }
 
 .side-footer a {
+    padding: 10% 0 10% 0;
     font-size: 0.8rem;
     color: #334D6E;
     display: flex;
@@ -128,11 +131,17 @@ ul {
 }
 
 .side-footer button {
+    padding: 10% 0 10% 0;
     font-size: 0.7rem;
     background: none;
     border: none;
     display: flex;
     align-items: center;
+}
+
+.side-footer button img{
+    padding: 0 5% 0 15%;
+    width: 30%;
 }
 
 .side-footer img {
@@ -207,9 +216,11 @@ input {
     column-gap: 2.5%;
     grid-template-columns: 29fr 20fr;
     grid-template-rows: 1fr 1fr;
+    overflow: auto;
 }
 
 .box {
+    height: 100%;
     padding: 5%;
     background-color: #FFFFFF;
     box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.06);
@@ -242,6 +253,7 @@ progress {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: relative;
 }
 
 .days {
@@ -257,12 +269,12 @@ progress {
 }
 
 .days p{
-    padding: 20% 25% 20% 25%;
+    padding: 15% 25% 15% 25%;
 }
 
-.days::selection {
-    color: #FFFFFF;
-    background: #109CF1;
+.day1 {
+    color: #EBEFF2;
+    background-color: #109CF1;
     border-radius: 100%;
 }
 
@@ -275,7 +287,6 @@ progress::-webkit-progress-value {
     background-color: #2ED47A;
     border-radius: 3px;
 }
-
 
 .cards {
     margin: 3.75% 0 3.75% 0;
@@ -302,6 +313,12 @@ progress::-webkit-progress-value {
     align-items: center;
 }
 
+.cards-contents h1 {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
 .due-date {
     font-size: 13px;
     display: flex;
@@ -322,7 +339,7 @@ progress::-webkit-progress-value {
 }
 
 .cards-profiles img {
-    margin-right: 5%;
+    margin-right:5%;
 }
 
 .cards-editor{
@@ -421,7 +438,6 @@ progress::-webkit-progress-value {
 }
 
 .charts-vertical {
-    height: 87.5%;
     padding: 5%;
     display: flex;
     flex-direction: column;
@@ -436,12 +452,12 @@ progress::-webkit-progress-value {
     color: #109CF1;
 }
 
-span {
+span {  
     color: #192A3E;
 }
 
 .graphic-lines {
-    height: 90%;
+    min-height: 70%;
     font-size: 0.75rem;
     display: grid;
     grid-template-columns: 1fr 2fr 2fr 2fr 2fr;
@@ -461,12 +477,16 @@ span {
 }
 
 .charts-horizontal {
-    height: 87.5%;
     width: 100%;
-    padding: 5%;
+    padding: 10%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+}
+
+.charts-horizontal img {
+    margin: 10%;
+    object-fit: scale-down;
 }
 
 .charts-horizontal ul {
@@ -474,7 +494,6 @@ span {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin: 10%;
     font-size: 0.6rem;
 }
 
@@ -496,7 +515,7 @@ span {
     margin: 3.75% -5% 3.75% -5%;
 }
 
-@media (max-width:375px) {
+@media (max-width:480px) {
     .content-wrapper {
         width: 100%;
     }
@@ -506,11 +525,34 @@ span {
     }
 
     .content {
-        display: flex;
-        flex-direction: column;
+        height: auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        overflow: auto;
         padding: 0;
         row-gap: 0;
         column-gap: 0;
+    }
+
+    .tasks {
+        box-shadow: none;
+        padding-bottom: 0%;
+    }
+
+    .tasks:hover {
+        box-shadow: none;
+    }
+
+    .cards {
+        box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.14);
+    }
+
+    .cards:hover {
+        box-shadow: none;
+    }
+
+    .area-showmore {
+        display: none;
     }
 
     .box {
