@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 * {
     box-sizing: border-box;
     padding: 0;
@@ -599,4 +600,40 @@ span {
         width: 75%;
         margin: 10% 0 10% 0;
     }
+=======
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {
+    font-family: 'Open Sans', sans-serif;
+    color: #373A3C;
+}
+
+.error-limit {
+    border: 1px solid #EBCCCC;
+    background-color: #F2DEDE;
+    color: #A94442;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    visibility: hidden;
+}
+
+.loaders {
+    height: 3vh;
+    width: 3vh;
+    display: none;
+}
+
+.loader {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 3px solid black;
+    border-top-color: ghostwhite;
+    animation: spin 1s infinite linear;
+}
+
+@keyframes spin {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+>>>>>>> Stashed changes
 }
