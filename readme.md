@@ -1,62 +1,79 @@
-# Javascript Project 1 - fibonacci-Him97
-fibonacci-Him97 created by GitHub Classroom
-______________________________________________________________________________________
+# Vuetify (Default)
 
-## Summary
-This is the first project in Javascript.
+This is the official scaffolding tool for Vuetify, designed to give you a head start in building your new Vuetify application. It sets up a base template with all the necessary configurations and standard directory structure, enabling you to begin development without the hassle of setting up the project from scratch.
 
-Note: when using bootstrap, or any other library, it is highly recommended to read their documentation before trying to implement something alone.
+## ❗️ Important Links
 
-## **Milestone 1 - Fibonacci**
-Features
->- Create a simple website that present the following text: “The Fibonacci of X is Y”, where X & Y are numbers declared in your JS code (should present numbers instead)
->- X and Y should be declared as JS variables. Both X and Y should be added to the HTML with JavaScript (meaning, do not write the value of X and Y directly in your HTML code, use Javascript to do that)
->- What is a Fibonacci number
-## **Milestone 2**
-Features
->- Instead of hardcoding Y (the result of the Fibonacci of X), calculate it with a for loop
->- The calculation should be wrapped in a function, that gets X as an argument, and returns Y
->- After the function, you should call the function, and assign the returned value in your HTML to present to the user
-## **Milestone 3**
-Features
->- Create an input (with number type) element and a button next to it that calculates fibonacci.
->- Follow this figma design (it is based on bootstrap, so use bootstrap): ITC Fibonacci Project Design  (For this milestone, only the first row of screens is relevant)
->- Add a click event listener to the button, that executes a function that takes the number value in the created input, calculates it’s Fibonacci value and presents it to the user
->- Recommended googling: ‘HTML Input element’ and ‘get value in Javascript of an input element’
-### **Milestone 3.1 - Geekout**
-Features
->- Implement the Fibonacci function with recursion
-## **Milestone 4**
-Features
->- Run the following local server: fibonacci-server (read the readme!)
->- Create a function that calls this server on this address: http://localhost:5050/fibonacci/:number, where :number is a parameter passed to the server to be calculated
->- The response is the calculated fibonacci, present it to the user.
->- Calling the server should replace your implementation of calculating fibonacci
-## **Milestone 5**
-Features
->- Present a loader to the user when a call is made to the server (indicating the server is calculating)
->- Present an error to the user if the input number is more than 50, and do not send a server request
->- Try passing the number 42 to the server. The server will send back an error, present this error to the user. (read fetch() docs to see how to identify if the server sent an error )
->- Follow the second row of screens in the figma design
-## **Milestone 6**
-Features
->- Create a function that calls the server with this url: http://localhost:5050/getFibonacciResults 
->- Call this function when the screen loads. You will get a list of fibonacci calculations that you previously submitted to the server
->- Present the list to the user under the calculator
->- The list should be updated every time the user makes a new calculation (suggestion: create a function the takes the data from the server response, and creates the html list to present to the user, and call this function after the user makes a new calculation)
->- Follow the third row of screens in the figma design
-### **Milestone 6.1 - Geekout**
-Features
->- Transform all you functions with promises in them to async/await
-## **Milestone 7**
-Features
->- Add a checkbox, under the calculator with “Save Calculation” text
->- If it is checked, calculate the fibonacci through the server (so it will save it to be presented in the list)
->- If it is not checked, calculate the fibonacci locally in your function (won’t send a request to the server). This time, allow 42 to be calculated. Still prevent the calculations for negative numbers and higher than 50.
-Since the calculation happens locally, don’t add it to the results list. (Do show tough on the result)
->- Follow the fourth row of screens in the figma design
-### **Milestone 7.1 - Geekout**
-Features
->- Add a select box with sort by date asc or desc / number asc or desc
->- After the user is checking one of the items in the list, rearrange the list to match the sorting preferences
->- Follow the fifth row of screens in the figma design
+- 📄 [Docs](https://vuetifyjs.com/)
+- 🚨 [Issues](https://issues.vuetifyjs.com/)
+- 🏬 [Store](https://store.vuetifyjs.com/)
+- 🎮 [Playground](https://play.vuetifyjs.com/)
+- 💬 [Discord](https://community.vuetifyjs.com)
+
+## 💿 Install
+
+Set up your project using your preferred package manager. Use the corresponding command to install the dependencies:
+
+| Package Manager                                                | Command        |
+|---------------------------------------------------------------|----------------|
+| [yarn](https://yarnpkg.com/getting-started)                   | `yarn install` |
+| [npm](https://docs.npmjs.com/cli/v7/commands/npm-install)     | `npm install`  |
+| [pnpm](https://pnpm.io/installation)                          | `pnpm install` |
+| [bun](https://bun.sh/#getting-started)                        | `bun install`  |
+
+After completing the installation, your environment is ready for Vuetify development.
+
+## ✨ Features
+
+- 🖼️ **Optimized Front-End Stack**: Leverage the latest Vue 3 and Vuetify 3 for a modern, reactive UI development experience. [Vue 3](https://v3.vuejs.org/) | [Vuetify 3](https://vuetifyjs.com/en/)
+- 🗃️ **State Management**: Integrated with [Pinia](https://pinia.vuejs.org/), the intuitive, modular state management solution for Vue.
+- 🚦 **Routing and Layouts**: Utilizes Vue Router for SPA navigation and vite-plugin-vue-layouts for organizing Vue file layouts. [Vue Router](https://router.vuejs.org/) | [vite-plugin-vue-layouts](https://github.com/JohnCampionJr/vite-plugin-vue-layouts)
+- 💻 **Enhanced Development Experience**: Benefit from TypeScript's static type checking and the ESLint plugin suite for Vue, ensuring code quality and consistency. [TypeScript](https://www.typescriptlang.org/) | [ESLint Plugin Vue](https://eslint.vuejs.org/)
+- ⚡ **Next-Gen Tooling**: Powered by Vite, experience fast cold starts and instant HMR (Hot Module Replacement). [Vite](https://vitejs.dev/)
+- 🧩 **Automated Component Importing**: Streamline your workflow with unplugin-vue-components, automatically importing components as you use them. [unplugin-vue-components](https://github.com/antfu/unplugin-vue-components)
+- 🛠️ **Strongly-Typed Vue**: Use vue-tsc for type-checking your Vue components, and enjoy a robust development experience. [vue-tsc](https://github.com/johnsoncodehk/volar/tree/master/packages/vue-tsc)
+
+These features are curated to provide a seamless development experience from setup to deployment, ensuring that your Vuetify application is both powerful and maintainable.
+
+## 💡 Usage
+
+This section covers how to start the development server and build your project for production.
+
+### Starting the Development Server
+
+To start the development server with hot-reload, run the following command. The server will be accessible at [http://localhost:3000](http://localhost:3000):
+
+```bash
+yarn dev
+```
+
+(Repeat for npm, pnpm, and bun with respective commands.)
+
+### Building for Production
+
+To build your project for production, use:
+
+```bash
+yarn build
+```
+
+(Repeat for npm, pnpm, and bun with respective commands.)
+
+Once the build process is completed, your application will be ready for deployment in a production environment.
+
+## 💪 Support Vuetify Development
+
+This project is built with [Vuetify](https://vuetifyjs.com/en/), a UI Library with a comprehensive collection of Vue components. Vuetify is an MIT licensed Open Source project that has been made possible due to the generous contributions by our [sponsors and backers](https://vuetifyjs.com/introduction/sponsors-and-backers/). If you are interested in supporting this project, please consider:
+
+- [Requesting Enterprise Support](https://support.vuetifyjs.com/)
+- [Sponsoring John on Github](https://github.com/users/johnleider/sponsorship)
+- [Sponsoring Kael on Github](https://github.com/users/kaelwd/sponsorship)
+- [Supporting the team on Open Collective](https://opencollective.com/vuetify)
+- [Becoming a sponsor on Patreon](https://www.patreon.com/vuetify)
+- [Becoming a subscriber on Tidelift](https://tidelift.com/subscription/npm/vuetify)
+- [Making a one-time donation with Paypal](https://paypal.me/vuetify)
+
+## 📑 License
+[MIT](http://opensource.org/licenses/MIT)
+
+Copyright (c) 2016-present Vuetify, LLC
