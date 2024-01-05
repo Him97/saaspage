@@ -1,0 +1,17 @@
+.App {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.notes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+  grid-gap: 1rem;
+}
+
+.bg-light{
+  --bs-bg-opacity: 0.5;
+  background-color: rgba(var(--bs-light-rgb), var(--bs-bg-opacity)) !important;
+  transition: 0.5s;
+}
